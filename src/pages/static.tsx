@@ -13,7 +13,8 @@ export const getStaticProps: GetServerSideProps = async () => {
   return {
     props: {
       staticData
-    }
+    },
+    revalidate: 10
   }
 }
 
